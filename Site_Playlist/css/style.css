@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2? family= Inter:wght@100;200;300;400;500;600;700;800 & display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font-family: "Inter", sans-serif;
+}
+
+/* body {
+  background-color: #f1f6fca7;
+} */
+
+section,
+footer {
+  padding: 54px 0;
+}
+
+h3 {
+  font-size: 50px;
+}
+p {
+  color: #0000009c;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+header {
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+ 
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+nav ul a {
+  color: white;
+  margin: 0 25px;
+  text-transform: uppercase;
+  font-size: 14px;
+  display: block;
+}
+nav ul a:not(.btn)::after {
+  content: "";
+  background-color: #073673;
+  height: 3px;
+  width: 0%;
+  display: block;
+  margin: 0 auto;
+  transition: 0.3s;
+}
+nav ul a:hover::after {
+  width: 100%;
+}
+
+header .container img {
+  width: 80px;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+}
+
+.banner .banner-text {
+  margin: 150px;
+  text-align: center;
+  padding: 0 90px;
+}
+.banner .banner-text h1 {
+  font-size: 96px;
+  color: white;
+}
+
+.banner .banner-text p {
+  font-size: 20px;
+  color: #ffffffb7;
+  font-weight: lighter;
+  margin: 18px 0;
+}
+/* sobre mim */
+/*   <!-- Slideshow container --> */
+.slider {
+  height: 600px;
+  overflow: hidden;
+}
+.slides {
+  display: flex;
+}
+
+.navigation-bar {
+  position: absolute;
+  top: 900px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  margin-top: 190px;
+}
+.navigation-auto {
+  position: absolute;
+  top: 450px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.navigation-auto div {
+  border: 2px solid #080808;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: none;
+  margin-top: 670px;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 10px;
+}
+
+input {
+  display: none;
+}
+
+.manual-btn {
+  border: 2px solid #fbfbfb;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 10px;
+}
+
+.manual-btn:hover {
+  background: #fbfbfb;
+  transition: 0.4s;
+  box-shadow: 1px 1px #4f9cf9, 2px 2px #4f9cf9, 3px 3px #4f9cf9;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+}
+
+.slides {
+  margin-left: 95px;
+  width: 1000%;
+  height: 50%;
+}
+
+.slide {
+  width: 10%;
+  transition: 0.5s;
+}
+
+.slide img {
+  margin: 120px;
+  margin-left: 200px;
+  border-radius: 10px;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -10%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -20%;
+}
+#radio4:checked ~ .first {
+  margin-left: -30%;
+}
+#radio5:checked ~ .first {
+  margin-left: -40%;
+}
+#radio6:checked ~ .first {
+  margin-left: -50%;
+}
+#radio7:checked ~ .first {
+  margin-left: -60%;
+}
+#radio8:checked ~ .first {
+  margin-left: -70%;
+}
+#radio9:checked ~ .first {
+  margin-left: -80%;
+}
+#radio10:checked ~ .first {
+  margin-left: -90%;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background-color: black;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background-color: black;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background-color: black;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background-color: black;
+}
+#radio5:checked ~ .navigation-auto .auto-btn5 {
+  background-color: black;
+}
+#radio6:checked ~ .navigation-auto .auto-btn6 {
+  background-color: black;
+}
+#radio7:checked ~ .navigation-auto .auto-btn7 {
+  background-color: black;
+}
+#radio8:checked ~ .navigation-auto .auto-btn8 {
+  background-color: black;
+}
+#radio9:checked ~ .navigation-auto .auto-btn9 {
+  background-color: black;
+}
+#radio10:checked ~ .navigation-auto .auto-btn10 {
+  background-color: black;
+}
+
+.sobre-mim .slider .slides {
+  margin-right: 150px;
+}
+.sobre-mim .desenho {
+  margin-top: 150px;
+}
+/* Minha historia */
+.minha-historia .container .musicas audio {
+  filter: invert(100%);
+  margin-left: 500px;
+}
+
+
+.minha-historia .container-2 {
+
+  display: flex;          
+          justify-content: space-around; 
+          align-items: stretch;         
+        
+}
+.minha-historia .container-2 .minha-historia-img  {
+  width: 90%;
+}
+
+.minha-historia .container-2 .minha-historia-img img {
+  width: 100%;
+
+}
+
+.minha-historia .container-2 .musicas audio {
+  float: right; 
+
+  margin: 10px;
+  filter: invert(100%);
+  
+}
+
+/* Meu Futuro */
+
+.meu-futuro .container-3 .musicas audio {
+  filter: invert(100%);
+}
+
+.meu-futuro .container-3 {
+  display: flex;
+  align-items: center;
+}
+.meu-futuro .meu-futuro-img {
+  width: 70%;
+  margin-right: 60px;
+}
+
+.meu-futuro .meu-futuro-img img {
+  width: 100%;
+  height: 50%;
+}
+
+.meu-futuro .musicas {
+  width: 50%;
+  margin-left: 60px;
+}
+
+.meu-futuro .musicas audio {
+  margin: 20px;
+}
+
+/* End minha historia */
+
+/* Jantares Especiais */
+.jantares-especiais .container-4 {
+  display: flex;
+  align-content: stretch;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.jantares-especiais .container-4 img {
+
+  width: 30%;
+}
+
+.jantares-especiais .container-4 audio {
+  filter: invert(100%);
+  margin-left: 60px;
+  margin-right: 80px;
+  margin-top: 150px;
+}
+
+
+
+
+/* End Jantares Especiais */
+/* Curiosidades */
+.minha-historia .container .musicas audio {
+  filter: invert(100%);
+  margin-left: 500px;
+}
+
+
+ .container-5 {
+
+  display: flex;          
+          justify-content: space-around; 
+          align-items: stretch;         
+        
+}
+.container-5 .curiosidade-img {
+  width: 90%;
+}
+
+ .container-5 .curiosidade-img img {
+  width: 100%;
+
+}
+
+ .container-5 .musicas audio {
+  float: right; 
+
+  margin: 10px;
+  filter: invert(100%);
+  
+}
+
+/* End Curiosidades */
+/* Emocoes */
+.container .emocoes{
+  display: flex;
+}
+
+
+.container .emocoes img{
+  margin: 12px;
+  width: 18%;
+
+}
+
+.container .musicas{
+  display: flex;
+}
+
+.container .musicas audio{
+  margin: 10px;
+  width: 25%;
+  filter: invert(100%);
+  margin-top: 35px;
+}
+/* End Emocoes */
+/* Footer */
+.footer {
+  background-color: #073673;
+  text-align: center;
+}
+
+.footer i {
+  color: #4f9cf9;
+  font-size: 19px;
+  background-color: white;
+  padding: 10px;
+  margin: 3px;
+  border-radius: 10px;
+}
+.footer p {
+  margin: 10px;
+  color: white;
+}
